@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Web Visualization Dashboard</title>
+
+    <!-- Bootstrap -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+<body>
+<nav class="navbar">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">LATITUDE</a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+       <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown">Plots
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="temperature.html">Temperature</a></li>
+          <li><a href="humidity.html">Humidity</a></li>
+          <li><a href="cloudiness.html">Cloudiness</a></li>
+		  <li><a href="windspeed.html">Wind Speed</a></li>
+        </ul>
+      </li>
+      <li><a href="comparison_pg1.html">Comparison</a></li>
+      <li><a href="Data_pg1.html">Data</a></li>
+    </ul>
+  </div>
+</nav>
+<div class=container-fluid>
+<div class="row">
+<div class="col-7 col-md-7">
+  <h1>Temperature</h1>
+  <p>Click any plot to get in-depth analysis</p>
+  <hr>
+  <img src="Fig1.png" width=55% class="responsive pull-left">
+  <p>There is parabolic relationship between the latitude locations of the cities and its temperatures.
+  The cities that are near the equator fall from comfortable to very hot temperatures (from 60 to 95 deg (F)).
+  But cities located further away from equator starts dropping temperature. Cities located on the opposite side of equator are very cold temperature ranges.
+</p>
+
+  </div>
+  <div class="col-5 col-md-5">
+	 <h3> Vizualizations </h3>
+	<a href="temperature.html"><img src="Fig1.png" width=45% class="responsive gap-right gap-below"></a>
+    <a href="humidity.html"><img src="Fig2.png" width=45% class="responsive gap-below"></a>
+    <a href="cloudiness.html"><img src="Fig3.png" width=45% class="responsive gap-right"></a>
+    <a href="windspeed.html"><img src="Fig4.png" width=45% class="responsive"></a>
+	</div>
+</div>
+</div>
+</body>
+</html>
